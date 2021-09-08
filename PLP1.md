@@ -7,9 +7,9 @@ History
 
 Getting Started
 
-1. First, go to https://rubyinstaller.org/downloads/ and select the latest version of Ruby with the Dev kit. Then install VSCode as the IDE. From here, in VSCode install the ruby extention and the code runner extension.
-2. This language does not have a recommended programming environment. Since it does not have a recommended environment, I chose VSCode because we will be using this editor for the rest of the coding in class.
-3. With the code runner extension, all you have to do is press the run arrow button in VSCode. However, Ruby files can be also run via the terminal.
+1. To install ruby first, go to https://rubyinstaller.org/downloads/ and select the latest version of Ruby with the Dev kit. Then install VSCode as the IDE. From here, in VSCode install the ruby extention and the code runner extension.
+2. This language does not have a recommended programming environment. Since it does not have a recommended environment, I chose VSCode because I already have it installed and use it frequently.
+3. With the code runner extension, all you have to do to run the program is press the run arrow button in VSCode. However, Ruby files can be also run via the terminal.
 4. Comments are made using the hash/pound symbol (#), similar to how comments are made in Python.
 
 Citations:
