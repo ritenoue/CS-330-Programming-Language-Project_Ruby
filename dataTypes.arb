@@ -1,0 +1,19 @@
+x = 6 #Integer
+y = "Hello" #string
+z = 12.34 #Floats
+a = true #Boolean
+#^^ This is not mentioned as legal in the documentation. However, Ruby doesn't throw an error when I run the code.
+b = [1, 2, 3, 4] #Array
+b = %w[1 2 3 4] #or shortcut notation %w
+puts b
+c = {"a" => "A", "b" => "B", "c" => "C"} #Hash
+d = :hi #Symbol
+e = 12..14 #Range
+f = /^\s*[a-z]/ #Regex
+
+puts x + z #Adding int and float
+mixedArray = [1, "Two", 3.3]
+convertFloat = x.to_f
+puts convertFloat
+convertString = z.to_s()
+puts convertString
