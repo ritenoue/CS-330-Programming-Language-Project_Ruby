@@ -1,6 +1,6 @@
 History
 
-1. Ruby
+1. This is a tutorial abut the programming language Ruby.
 2. Ruby was created in the mid-1990s (released in 1995) by Yukihiro “Matz” Matsumoto. The language was created as a general purpose language, but Matsumoto created the language as a mashup of his favorite languages. These languages are Perl, Smalltalk, Eiffel, Ada, and Lisp.
 3. Ruby is a general purpose language. However, a framework built on Ruby, Ruby on Rails, is used to build web pages and applications. Projects built with Ruby include GitHub and Airbnb.
 4. To learn Ruby I will be using a combination of online articles and textbooks offered through the ACM. Like Tutorialspoint's overview of ruby  (https://www.tutorialspoint.com/ruby/index.htm) and Beginning Ruby 3: From Beginner to Pro by Carleton DiLeo and Peter Cooper on the O'riley website (https://www.oreilly.com/library/view/beginning-ruby-3/9781484263242/) and the official Ruby documentation (http://ruby-doc.com/docs/ProgrammingRuby/).
