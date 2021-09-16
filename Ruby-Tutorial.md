@@ -21,6 +21,13 @@ Data Types and Naming Conventions
 5. Refering to the file dataTypes.arb you can see how variables are declared and some examples of how the can be used. It also shows the data types available for use. Variables in Ruby have few limitations. The biggest one is that you cannot add/concatanate unlike variables with each other. The documentation on Ruby does not mention the limitations in great detail.
 6. Ruby has both primitive and complex data types. The primitive data types it has are integer, string, and floating point numbers. The complex data types are arrays, hashs, ranges, regex expressions, and symbols.
 
+If/else, Switch, and Logical Expressions
+1. In Ruby the boolean values are true and false or nil. Ruby treats false and nil the same. Also, in Ruby all objects that are not nil or false can be considered to be true.
+2. The conditional statements in Ruby are if/elseif/else and unless. Unless in Ruby acts as the oposite of if. Ruby also allows for the key word then to be used in if statements if the succeeding code is only one line. If and unless can also be used as modifiers. In addition, Ruby also has something similar to switches called case statements.
+3. Ruby does use short-circuit evaluation.
+4. Ruby prevents a dangling else by using and ending statement. In this case it is 'end' after the else.
+5. For case expressions you do not have to use break to exit from a case and does not have use of continue to force evaluation of all cases.
+
 Citations:
 -https://www.ruby-lang.org/en/about/
 -https://rubyonrails.org/
