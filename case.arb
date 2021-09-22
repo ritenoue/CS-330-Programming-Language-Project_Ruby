@@ -1,0 +1,11 @@
+x = 5
+case x 
+when 1
+    puts "One"
+when 5
+    puts "Five"
+when 6
+    puts "Six"
+else
+    puts "Some random number"
+end

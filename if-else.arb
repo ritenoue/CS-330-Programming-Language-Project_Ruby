@@ -1,0 +1,45 @@
+#basic if/else
+x = 1
+y = 2
+
+if x > y
+    puts "x is greater than y"
+elsif x < y
+    puts "y is greater than x"
+else
+    puts "x and y are equal"
+end 
+
+#multi-conditional if/else
+x = 5
+y = 10
+
+if x < y and y > 7
+    puts "true"
+else
+    puts "false"
+end
+#this is also valid
+if x < y && y > 7
+    puts "true"
+else
+    puts "false"
+end
+#Ruby accepts both and/or and &&/||
+
+#unless statements
+unless x > y
+    puts "x is less than y"
+else
+    puts "x is greater than y"
+end 
+
+#Short circuit evaluation
+x = false
+y = true
+
+if x and y
+    puts "Not short circuit evaluation"
+else
+    puts "Used short circuit evaluation"
+end
