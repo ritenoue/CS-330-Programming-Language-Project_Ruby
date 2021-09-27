@@ -40,6 +40,63 @@ Another conditional logic device Ruby offers is the case statement. Case stateme
 
 For examples, refer to if-else.arb and switch.arb.
 
+## Loops
+
+Ruby has three different kinds of loops: while/until loops, for-in loops, and basic iterator functions.
+
+### While loop:
+A while loop in Ruby executes a chunck of code *while* a condition is true.
+```
+while conditional [do]
+  # code to be executed
+end
+```
+
+### Until loop:
+An until loop Ruby executes a chunk of code *until* a condition is met.
+```
+until conditional [do]
+  # code to be executed
+end
+```
+
+### For-in loops:
+These loops "walk" over any object that respond to the each() function. So this is objects like arrays and ranges.
+```
+for i in expression [do]
+   # code to be executed
+end
+```
+
+### Iterator method loops:
+Ruby has methods that execute a block of code for a specified number of times. The iterators are .upto(), .times(), .step(), .each(), and loop.
+```
+a.iterator do |variable|
+  # code to be execute
+end
+
+or
+
+loop {
+  # code to be executed
+}
+```
+
+\* It should be noted that the Ruby documentation asserts that it does not have for loops in the way that C-family languages do, and that for-in loops are just "syntactic sugar" and act much like the .each() iterator.
+
+## Functions
+
+Functions in Ruby are referred to as methods. They are declared using the def keyword, the method name in camel case, and the arguments in parentesis. Mehtods can be names using letters and either a trailing ! to indicate the method modifies the reciever or a trailing ? to indicate that the method acts as a query. They also can be placed in any part of the program. Like this:
+```
+def myMethod(arg1, arg2, arg3)
+  # Code for the method
+  return
+end
+```
+Ruby methods both accepts multiple arguments of mixed types and retruns multiple variables of mixed types. Although Ruby does return multiple arguments they do get stored in one variable as a string that must be split after the fact.
+
+Recursion is also allowed in Ruby.
+
 #### Citations:
 * https://www.ruby-lang.org/en/about/
 * https://rubyonrails.org/
