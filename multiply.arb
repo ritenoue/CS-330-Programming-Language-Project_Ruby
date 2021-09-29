@@ -1,0 +1,10 @@
+#Method must go first
+
+def multiply(x, y)
+    return x * y
+end
+
+x = 5
+y = 10
+z = multiply(x, y)
+puts z

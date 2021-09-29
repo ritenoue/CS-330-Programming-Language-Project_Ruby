@@ -1,0 +1,31 @@
+def value(x)
+  x = "Hi"
+end
+
+x = "Hello"
+
+value(x)
+
+puts x
+
+#If Ruby was pass by reference x would print "Hi" but it prints "Hello" so it is pass by value.
+
+#However if we do this
+
+
+def reference(array, string)
+    array << string
+end
+  
+  words = ["hi", "there"]
+  puts words.inspect
+
+  reference(words, "word")
+  
+  puts words.inspect
+
+#Ruby prints the list with the new word. Meaning that this function acts as pass by reference.
+
+#Meaning primitive data types are pass by value and complex data types are pass by reference
+
+#https://learn.co/lessons/pass-by-reference

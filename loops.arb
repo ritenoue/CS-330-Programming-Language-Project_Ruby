@@ -1,0 +1,29 @@
+puts "WHile loop"
+i = 0
+while i < 10
+    puts i
+    i = i + 1
+end
+
+puts "Until loop"
+x = 0
+until x > 10
+    puts x 
+    x = x + 1
+end
+
+puts "Iterator loop"
+5.times do
+    puts "Hi"
+end
+
+puts "another iterator loop"
+
+0.step(20, 5) do
+    puts "Hi"
+end 
+
+puts "For-in loop"
+for i in 1..10
+    puts i
+end 

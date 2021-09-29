@@ -1,0 +1,10 @@
+def stringSplit(x)
+    x = x.split(' ')
+    return x
+end
+
+x = "String to be split"
+y = stringSplit(x)
+puts("The returned variable is an " + y.class.to_s)
+
+#https://www.geeksforgeeks.org/ruby-string-split-method-with-examples/
