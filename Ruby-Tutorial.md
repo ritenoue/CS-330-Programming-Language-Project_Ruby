@@ -95,7 +95,7 @@ end
 ```
 Ruby methods both accepts multiple arguments of mixed types and retruns multiple variables of mixed types. Although Ruby does return multiple arguments they do get stored in one variable as a string that must be split after the fact.
 
-When passing variables into a method in Ruby it is important to remember that it is a pass by reference. Some people will say that Ruby is pass by object (since everything is an object) or pass by value but the value is a reference; these people are being needlessly pedantic and the thing that physically gets passed is a location in memory. So, Ruby, functionally, is pass by reference.
+When passing variables into a method in Ruby it is important to remember that it depends on the data type. Primitive data types are pass by value and complex data types are pass by reference. The file reference.arb illustrates this. Some people will say that Ruby is pass by object (since everything is an object) or pass by value but the value is a reference; these people are being needlessly pedantic and the thing that physically gets passed is a location in memory. So, Ruby, functionally, is both.
 
 Recursion is also allowed in Ruby.
 
@@ -118,3 +118,4 @@ Recursion is also allowed in Ruby.
 * https://www.geeksforgeeks.org/ruby-types-of-iterators/
 * https://www.geeksforgeeks.org/recursion-in-ruby/
 * https://launchschool.medium.com/object-passing-in-ruby-pass-by-reference-or-pass-by-value-6886e8cdc34a
+* https://learn.co/lessons/pass-by-reference
