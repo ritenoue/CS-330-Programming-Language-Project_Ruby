@@ -99,6 +99,19 @@ When passing variables into a method in Ruby it is important to remember that it
 
 Recursion is also allowed in Ruby.
 
+## Classes and Inheritance
+Ruby is an Object-Oriented programming languange. A class in Ruby is created using the key word class and a name strting with a capital letter. Then initializing the class attributes using the method initialize, which is built in method that does the same thing across all Ruby objects. The instance variables are stored starting with an @. As seen here:
+```
+class Name
+  def initialize(attr1, attr2)
+    @var1 = attr1
+    @var2 = attr2
+  end
+end
+```
+You can also add a .to_s method which is used to convert objects to readable strings across all classes as well.
+
+
 #### Citations:
 * https://www.ruby-lang.org/en/about/
 * https://rubyonrails.org/
