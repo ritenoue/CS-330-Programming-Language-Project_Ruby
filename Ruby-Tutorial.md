@@ -102,15 +102,42 @@ Recursion is also allowed in Ruby.
 ## Classes and Inheritance
 Ruby is an Object-Oriented programming languange. A class in Ruby is created using the key word class and a name strting with a capital letter. Then initializing the class attributes using the method initialize, which is built in method that does the same thing across all Ruby objects. The instance variables are stored starting with an @. As seen here:
 ```
-class Name
+class ClassName
   def initialize(attr1, attr2)
     @var1 = attr1
     @var2 = attr2
   end
 end
 ```
-You can also add a .to_s method which is used to convert objects to readable strings across all classes as well.
+You can also add a .to_s method which is used to convert objects to readable strings.
+The .new class creates a new object, and .delete gets rid of an object across all classes as well.
 
+Inheritance allows you to create specialized versions of other classes. In Ruby this is done by adding the super method in the constructor class. Like this:
+```
+class SpcecialClassName < ClassName
+  def initialize(attr1, attr2, newAttr)
+    super(attr1, attr2)
+    @newVar = newAttr
+  end
+end
+```
+Here the super class takes in the attributes that are inherited from the general class name and the new attributes are added the same as any other class. To create the class you call class then the name of the new class, the less than operator '<', and the name of the class being inherited from. Ruby offers single inheritance but allows mixins as a compromise for the power of multiple inheritance. Mixins are modules that can be written to add to a class without actually inheriting from a complete class. This allows for functionality like multi-inheritance. Mixins look something like this:
+```
+module ModuleName
+    def moduleMethod(arg1, arg2, arg3)
+    # Code for the method
+  end
+end
+
+class ClassName
+  include ModuleName
+  def initialize(attr1, attr2)
+    @var1 = attr1
+    @var2 = attr2
+  end
+end
+```
+Also, remember, when naming methods Ruby does not allow for overloading so make sure each method has a unique name.
 
 #### Citations:
 * https://www.ruby-lang.org/en/about/
@@ -132,3 +159,5 @@ You can also add a .to_s method which is used to convert objects to readable str
 * https://www.geeksforgeeks.org/recursion-in-ruby/
 * https://launchschool.medium.com/object-passing-in-ruby-pass-by-reference-or-pass-by-value-6886e8cdc34a
 * https://learn.co/lessons/pass-by-reference
+* https://www.geeksforgeeks.org/method-overloading-in-ruby/
+* https://www.geeksforgeeks.org/ruby-class-object/
