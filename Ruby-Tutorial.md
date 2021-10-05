@@ -161,3 +161,5 @@ Also, remember, when naming methods Ruby does not allow for overloading so make 
 * https://learn.co/lessons/pass-by-reference
 * https://www.geeksforgeeks.org/method-overloading-in-ruby/
 * https://www.geeksforgeeks.org/ruby-class-object/
+* https://www.geeksforgeeks.org/ruby-inheritance/
+* http://rubylearning.com/satishtalim/including_other_files_in_ruby.html
