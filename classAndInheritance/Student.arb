@@ -1,0 +1,79 @@
+load 'Person.arb'
+
+module School
+    def setSchool(s)
+        @school = s
+    end
+
+    def getSchool
+        return(@school)
+    end
+end
+
+class Student < Person
+    include School
+    def initialize(name, birthdate, major, gpa)
+        super(name, birthdate)
+        @major = major
+        @gpa = gpa
+    end
+
+    def getMajor()
+        return(@major)
+    end
+
+    def setMajor(major)
+        @major = major
+    end
+
+    def getGPA()
+        return(@gpa)
+    end
+
+    def setGPA(gpa) 
+        @gpa = gpa
+    end
+
+    def getLetterGrade()
+        g = @gpa
+        if g > 3.67
+            return("A")
+        elsif g > 3.33 && g <= 3.67
+            return("-A")
+        elsif g > 3.0 && g <= 3.33
+            return("+B")
+        elsif g > 2.67 && g <= 3.0
+            return("B")
+        elsif g > 2.33 && g <= 2.67
+            return("-B")
+        elsif g > 2.0 && g <= 2.33
+            return("+C")
+        elsif g > 1.67 && g <= 2.0
+            return("C")
+        elsif g > 1.33 && g <= 1.67
+            return("-C")
+        elsif g > 1.0 && g <= 1.33
+            return("+D")
+        elsif g > 0.67 && g <= 1.0
+            return("D")
+        elsif g > 0 && g <= 0.67
+            return("-D")
+        else
+            return("F")
+        end
+    end
+
+    def to_s
+        return @name + " (" + @birthdate + "): Major = " + @major + ", GPA = " + @gpa.to_s
+    end
+end
+
+student = Student.new("Harry Potter", "1980-07-31", "Wizardry", 3.5)
+puts student
+
+student.setSchool("Hogwarts")
+puts student.getSchool
+
+puts student.getLetterGrade
+puts student.getMajor
+puts student.getGPA

@@ -1,0 +1,63 @@
+class Person
+    def initialize(name, birthdate)
+        @name = name
+        @birthdate = birthdate
+    end
+
+    def getName()
+        return(@name)
+    end
+
+    def setName(name)
+        @name = name
+        return(@name)
+    end
+
+    def getBirthdate()
+        return(@birthdate)
+    end
+
+    def getAge()
+        time = Time.new
+        birth = @birthdate.split(/-/)
+        birthYear = birth[0].to_i
+        birthMonth = birth[1].to_i
+        birthDay = birth[2].to_i
+        year = time.year
+        month = time.month
+        day = time.day
+        if month > birthMonth
+            age = year - birthYear
+            return(age)
+        elsif month < birthMonth
+            age = (year - 1) - birthMonth
+        elsif month == birthMonth
+            if day >= birthDay
+                age = year - birthYear
+                return(age)
+            else
+                age = (year - 1) - birthYear
+                return(age)
+            end
+        else
+            age = (year - 1) - birthYear
+            return(age)
+        end #if/else
+    end #getBirthdate
+
+    def to_s 
+        return @name + " (" + @birthdate + ")"
+    end #to_S
+end #Person
+
+#Send birthdate in as YYYY-MM-DD
+person = Person.new("Harry Potter", "1980-07-31")
+puts person
+
+puts person.getName
+puts person.getBirthdate
+
+puts person.getAge
+
+
+#https://www.techotopia.com/index.php/Ruby_String_Conversions
